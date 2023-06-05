@@ -1,3 +1,3 @@
 select
-  *
-from {{ source('dbt_source', 'orders') }}
+    distinct *
+from {{source('dbt_source', 'orders')}}
