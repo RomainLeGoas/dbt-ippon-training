@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: dbt_source
+    database: DB_DBT_RLEGOAS_DEV 
+    schema: source
+    tables:
+      - name: restaurants
+      - name: orders
