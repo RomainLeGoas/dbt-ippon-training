@@ -12,8 +12,7 @@ models:
         - name: ca
         - name: name
         - name: address
-      
       tests:
         - dbt_utils.equality:
-            compare_model: ref('expect_restaurants_turnover_ordered')
+            compare_model: ref('expects_restaurants_turnover_ordered')
             tags: ['unit_testing']
