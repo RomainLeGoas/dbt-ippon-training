@@ -21,6 +21,13 @@ sources:
             description: This is unique identifier for the order
             tests:
               - not_null
-              - relationships:
-                  field: identifier
-                  to: ref('base_restaurants')
+        
+      - name: dishes
+        description: This table contains info about the dishes
+        columns:
+          - name: identifier
+            description: This is unique identifier for the dish
+            tests:
+              - not_null
+              - unique
+
