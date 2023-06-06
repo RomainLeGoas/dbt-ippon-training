@@ -1,3 +1,3 @@
 select
   *
-from {{ source('dbt_source', 'restaurants') }}
+from {{ mockable_source('dbt_source', 'restaurants', 'sample_restaurants') }}
