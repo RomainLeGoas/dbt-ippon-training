@@ -1,7 +1,7 @@
 version: 2
 
 models:  
-    - name: restaurants__benefits   
+    - name: restaurants__benefit_orders_hourly   
       description: Description model
       columns:      
         - name: identifier  
