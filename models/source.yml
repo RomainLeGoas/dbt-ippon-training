@@ -6,6 +6,7 @@ sources:
       {%- if target.name.lower() == "dev" -%} DB_DBT_RLEGOAS_DEV 
       {%- elif target.name.lower() == "prod" -%} DB_DBT_RLEGOAS_PROD
       {%- else -%} DB_DBT_RLEGOAS_DEV
+      {%- endif -%}
     schema: source
     tables:
       - name: restaurants
