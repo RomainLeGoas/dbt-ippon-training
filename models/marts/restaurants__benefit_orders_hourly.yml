@@ -1,0 +1,15 @@
+version: 2
+
+models:  
+    - name: restaurants__benefit_orders_hourly   
+      description: Description model
+      columns:      
+        - name: identifier  
+          description: ID     
+          tests:          
+              - not_null     
+        - name: name
+        - name: nb_ordered
+        - name: global_turnover
+        - name: global_profit
+        - name: hour
